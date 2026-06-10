@@ -32,7 +32,11 @@ public class Q55 {
             }
         }
 
-        System.out.println("Second largest element of the array is " + s_max);
+        if (s_max == Integer.MIN_VALUE) {
+            System.out.println("Second largest element does not exist");
+        } else {
+            System.out.println("Second largest element of the array is " + s_max);
+        }
 
         sc.close();
     }
